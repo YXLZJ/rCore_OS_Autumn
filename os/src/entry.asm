@@ -51,5 +51,5 @@ boot_page_table:
     .quad (0x80000 << 10) | 0xcf
     .zero 507 * 8
     # 第 510 项：0xffff_ffff_8000_0000 -> 0x8000_0000，0xcf 表示 VRWXAD 均为 1
-    .quad (0x80000 << 10) | 0xcf
+    .quad (0x80000 << 10) | 0xcf #可读可写可执行
     .quad 0

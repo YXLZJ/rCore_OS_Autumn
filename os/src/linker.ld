@@ -7,6 +7,7 @@ OUTPUT_ARCH(riscv)
 ENTRY(_start)
 
 /* 数据存放起始地址 */
+/* 存放在最上面的一个G*/
 BASE_ADDRESS = 0xffffffff80200000; /* 修改为虚拟地址 */
 
 SECTIONS
